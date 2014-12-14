@@ -75,9 +75,7 @@ namespace pixlocker3th
 		private System.Windows.Forms.Panel pnB3rd;
 		private System.Windows.Forms.Panel pn3rd;
 		private System.Windows.Forms.Timer time2GO;
-		private System.Windows.Forms.Panel panel11;
-		private System.Windows.Forms.Panel panel12;
-		private System.Windows.Forms.Panel panel13;
+		private System.ComponentModel.BackgroundWorker bgWorker;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -103,7 +101,6 @@ namespace pixlocker3th
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.pnR1st = new System.Windows.Forms.Panel();
-			this.panel11 = new System.Windows.Forms.Panel();
 			this.pnB1st = new System.Windows.Forms.Panel();
 			this.pnG1st = new System.Windows.Forms.Panel();
 			this.pnCor1st = new System.Windows.Forms.Panel();
@@ -143,7 +140,6 @@ namespace pixlocker3th
 			this.pnG2nd = new System.Windows.Forms.Panel();
 			this.pnB2nd = new System.Windows.Forms.Panel();
 			this.pnR2nd = new System.Windows.Forms.Panel();
-			this.panel12 = new System.Windows.Forms.Panel();
 			this.lbL3rd = new System.Windows.Forms.Label();
 			this.lbS3rd = new System.Windows.Forms.Label();
 			this.lbH3rd = new System.Windows.Forms.Label();
@@ -164,30 +160,17 @@ namespace pixlocker3th
 			this.pnG3rd = new System.Windows.Forms.Panel();
 			this.pnB3rd = new System.Windows.Forms.Panel();
 			this.pn3rd = new System.Windows.Forms.Panel();
-			this.panel13 = new System.Windows.Forms.Panel();
 			this.time2GO = new System.Windows.Forms.Timer(this.components);
-			this.pnR1st.SuspendLayout();
-			this.pnR2nd.SuspendLayout();
-			this.pn3rd.SuspendLayout();
+			this.bgWorker = new System.ComponentModel.BackgroundWorker();
 			this.SuspendLayout();
 			// 
 			// pnR1st
 			// 
 			this.pnR1st.BackColor = System.Drawing.Color.Red;
-			this.pnR1st.Controls.Add(this.panel11);
 			this.pnR1st.Location = new System.Drawing.Point(3, 3);
 			this.pnR1st.Name = "pnR1st";
 			this.pnR1st.Size = new System.Drawing.Size(255, 15);
 			this.pnR1st.TabIndex = 0;
-			// 
-			// panel11
-			// 
-			this.panel11.BackColor = System.Drawing.Color.Black;
-			this.panel11.ForeColor = System.Drawing.Color.Black;
-			this.panel11.Location = new System.Drawing.Point(0, 0);
-			this.panel11.Name = "panel11";
-			this.panel11.Size = new System.Drawing.Size(330, 48);
-			this.panel11.TabIndex = 60;
 			// 
 			// pnB1st
 			// 
@@ -521,20 +504,11 @@ namespace pixlocker3th
 			// 
 			// pnR2nd
 			// 
-			this.pnR2nd.Controls.Add(this.panel12);
+			this.pnR2nd.BackColor = System.Drawing.Color.Red;
 			this.pnR2nd.Location = new System.Drawing.Point(3, 128);
 			this.pnR2nd.Name = "pnR2nd";
 			this.pnR2nd.Size = new System.Drawing.Size(255, 15);
 			this.pnR2nd.TabIndex = 20;
-			// 
-			// panel12
-			// 
-			this.panel12.BackColor = System.Drawing.Color.Red;
-			this.panel12.ForeColor = System.Drawing.Color.Black;
-			this.panel12.Location = new System.Drawing.Point(0, 0);
-			this.panel12.Name = "panel12";
-			this.panel12.Size = new System.Drawing.Size(310, 48);
-			this.panel12.TabIndex = 61;
 			// 
 			// lbL3rd
 			// 
@@ -704,24 +678,19 @@ namespace pixlocker3th
 			// pn3rd
 			// 
 			this.pn3rd.BackColor = System.Drawing.Color.Red;
-			this.pn3rd.Controls.Add(this.panel13);
 			this.pn3rd.Location = new System.Drawing.Point(3, 254);
 			this.pn3rd.Name = "pn3rd";
 			this.pn3rd.Size = new System.Drawing.Size(255, 15);
 			this.pn3rd.TabIndex = 40;
 			// 
-			// panel13
-			// 
-			this.panel13.BackColor = System.Drawing.Color.White;
-			this.panel13.ForeColor = System.Drawing.Color.Black;
-			this.panel13.Location = new System.Drawing.Point(3, 0);
-			this.panel13.Name = "panel13";
-			this.panel13.Size = new System.Drawing.Size(307, 48);
-			this.panel13.TabIndex = 62;
-			// 
 			// time2GO
 			// 
 			this.time2GO.Tick += new System.EventHandler(this.Time2GOTick);
+			// 
+			// bgWorker
+			// 
+			this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BgWorkerDoWork);
+			this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BgWorkerRunWorkerCompleted);
 			// 
 			// MainForm
 			// 
@@ -797,9 +766,6 @@ namespace pixlocker3th
 			this.Text = "PixLocker the 3th";
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainFormKeyDown);
-			this.pnR1st.ResumeLayout(false);
-			this.pnR2nd.ResumeLayout(false);
-			this.pn3rd.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}

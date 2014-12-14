@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Threading;
 
 namespace pixlocker3th
 {
@@ -221,6 +222,23 @@ namespace pixlocker3th
                     break;
             }
             return ret;
+			
+		}
+		void BgWorkerDoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+		{
+			Point rato = (mouseLocked[0] ? freezedMouse[0] : System.Windows.Forms.Cursor.Position);
+			Color pxCor;
+			if (OP_calculateMediaPx)
+				pxCor = this.SeaOfPixels(rato, OP_radiusMedia);
+			else
+				pxCor = WinPixel.GetPixelColor(rato.X, rato.Y);
+			
+			e.Result = pxCor;
+			Thread.Sleep(12);
+		}
+		void BgWorkerRunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
+		{
+			Color cor = e.Result as Color;
 			
 		}
 		
