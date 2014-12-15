@@ -37,6 +37,4 @@ namespace pixlocker3th
        return color;
       }		
 	}
-	
-	
 }

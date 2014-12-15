@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Configuration;
-using System.Threading;
+
 
 namespace pixlocker3th
 {
@@ -69,9 +69,11 @@ namespace pixlocker3th
 			OP_refreshRate = Convert.ToInt32(ConfigurationManager.AppSettings["RefreshRate"]);
 			time2GO.Interval = OP_refreshRate;
 			time2GO.Enabled = true;
+			this.TopMost = OP_alwaysOnTop;
 		}
 		void Time2GOTick(object sender, EventArgs e)
 		{
+			//first
 			Point rato = (mouseLocked[0] ? freezedMouse[0] : System.Windows.Forms.Cursor.Position);
 			Color pxCor;
 			if (OP_calculateMediaPx)
@@ -90,6 +92,46 @@ namespace pixlocker3th
 			lbH1st.Text = pxCor.GetHue().ToString("N3");
 			lbS1st.Text = pxCor.GetSaturation().ToString("N3");
 			lbL1st.Text = pxCor.GetBrightness().ToString("N3");
+			
+			
+			//second...
+			rato = (mouseLocked[1] ? freezedMouse[1] : System.Windows.Forms.Cursor.Position);
+			if (OP_calculateMediaPx)
+				pxCor = this.SeaOfPixels(rato, OP_radiusMedia);
+			else
+				pxCor = WinPixel.GetPixelColor(rato.X, rato.Y);
+			
+			pnCor2nd.BackColor = pxCor;
+			pnCtrl2nd.BackColor = this.ColorfromLum(pxCor.GetBrightness());
+			pnR2nd.Width = Convert.ToInt32(pxCor.R);
+			pnG2nd.Width = Convert.ToInt32(pxCor.G);
+			pnB2nd.Width = Convert.ToInt32(pxCor.B);
+			lbR2nd.Text = pxCor.R.ToString();
+			lbG2nd.Text = pxCor.G.ToString();
+			lbB2nd.Text = pxCor.B.ToString();
+			lbH2nd.Text = pxCor.GetHue().ToString("N3");
+			lbS2nd.Text = pxCor.GetSaturation().ToString("N3");
+			lbL2nd.Text = pxCor.GetBrightness().ToString("N3");
+			
+			//third
+			rato = (mouseLocked[2] ? freezedMouse[2] : System.Windows.Forms.Cursor.Position);
+			if (OP_calculateMediaPx)
+				pxCor = this.SeaOfPixels(rato, OP_radiusMedia);
+			else
+				pxCor = WinPixel.GetPixelColor(rato.X, rato.Y);
+			
+			pnCor3rd.BackColor = pxCor;
+			pnCtrl3rd.BackColor = this.ColorfromLum(pxCor.GetBrightness());
+			pnR3rd.Width = Convert.ToInt32(pxCor.R);
+			pnG3rd.Width = Convert.ToInt32(pxCor.G);
+			pnB3rd.Width = Convert.ToInt32(pxCor.B);
+			lbR3rd.Text = pxCor.R.ToString();
+			lbG3rd.Text = pxCor.G.ToString();
+			lbB3rd.Text = pxCor.B.ToString();
+			lbH3rd.Text = pxCor.GetHue().ToString("N3");
+			lbS3rd.Text = pxCor.GetSaturation().ToString("N3");
+			lbL3rd.Text = pxCor.GetBrightness().ToString("N3");
+			
 		}
 		void MainFormKeyDown(object sender, KeyEventArgs e)
 		{
@@ -140,11 +182,6 @@ namespace pixlocker3th
 			int myR = 0;
 			int myG = 0;
 			int myB = 0;
-				/*
-			float myHu = 0;
-			float mySa = 0;
-			float myBr = 0;
-			*/
 			for (int row = 0; row < length; row++)
 			{
 				for (int col = 0; col < length; col++)
@@ -154,11 +191,6 @@ namespace pixlocker3th
 					myR += rainbow[row,col].R;
 					myG += rainbow[row,col].G;
 					myB += rainbow[row,col].B;
-						/*
-					myHu += rainbow[row,col].GetHue();
-					mySa += rainbow[row,col].GetSaturation();
-					myBr += rainbow[row,col].GetBrightness();
-					*/
 					}
 				}
 			}
@@ -168,7 +200,6 @@ namespace pixlocker3th
 			int meB = Convert.ToInt32(myB / qtd);
 				
 			return Color.FromArgb(255, meR, meG, meB);
-			
 		}
 		private bool PXisValid(Point px)
 		{
@@ -221,26 +252,7 @@ namespace pixlocker3th
                     ret = Color.FromArgb(0xFF, 0x00, 0x00, 0x00);
                     break;
             }
-            return ret;
-			
+            return ret;	
 		}
-		void BgWorkerDoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
-		{
-			Point rato = (mouseLocked[0] ? freezedMouse[0] : System.Windows.Forms.Cursor.Position);
-			Color pxCor;
-			if (OP_calculateMediaPx)
-				pxCor = this.SeaOfPixels(rato, OP_radiusMedia);
-			else
-				pxCor = WinPixel.GetPixelColor(rato.X, rato.Y);
-			
-			e.Result = pxCor;
-			Thread.Sleep(12);
-		}
-		void BgWorkerRunWorkerCompleted(object sender, System.ComponentModel.RunWorkerCompletedEventArgs e)
-		{
-			Color cor = e.Result as Color;
-			
-		}
-		
 	} //class
 }//namespace

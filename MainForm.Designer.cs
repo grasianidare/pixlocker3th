@@ -73,9 +73,11 @@ namespace pixlocker3th
 		private System.Windows.Forms.Panel pnCor3rd;
 		private System.Windows.Forms.Panel pnG3rd;
 		private System.Windows.Forms.Panel pnB3rd;
-		private System.Windows.Forms.Panel pn3rd;
+		private System.Windows.Forms.Panel pnR3rd;
 		private System.Windows.Forms.Timer time2GO;
-		private System.ComponentModel.BackgroundWorker bgWorker;
+		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.GroupBox groupBox3;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -108,18 +110,37 @@ namespace pixlocker3th
 			this.lbKey1st = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.lbB1st = new System.Windows.Forms.Label();
-			this.lbG1st = new System.Windows.Forms.Label();
-			this.lbR1st = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.label23 = new System.Windows.Forms.Label();
+			this.lbKey2nd = new System.Windows.Forms.Label();
+			this.pnCtrl2nd = new System.Windows.Forms.Panel();
+			this.pnCor2nd = new System.Windows.Forms.Panel();
+			this.pnG2nd = new System.Windows.Forms.Panel();
+			this.pnB2nd = new System.Windows.Forms.Panel();
+			this.pnR2nd = new System.Windows.Forms.Panel();
+			this.label37 = new System.Windows.Forms.Label();
+			this.label38 = new System.Windows.Forms.Label();
+			this.lbKey3rd = new System.Windows.Forms.Label();
+			this.pnCtrl3rd = new System.Windows.Forms.Panel();
+			this.pnCor3rd = new System.Windows.Forms.Panel();
+			this.pnG3rd = new System.Windows.Forms.Panel();
+			this.pnB3rd = new System.Windows.Forms.Panel();
+			this.pnR3rd = new System.Windows.Forms.Panel();
+			this.time2GO = new System.Windows.Forms.Timer(this.components);
+			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.lbL1st = new System.Windows.Forms.Label();
 			this.lbS1st = new System.Windows.Forms.Label();
 			this.lbH1st = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
+			this.lbB1st = new System.Windows.Forms.Label();
+			this.lbG1st = new System.Windows.Forms.Label();
+			this.lbR1st = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.lbL2nd = new System.Windows.Forms.Label();
 			this.lbS2nd = new System.Windows.Forms.Label();
 			this.lbH2nd = new System.Windows.Forms.Label();
@@ -132,14 +153,7 @@ namespace pixlocker3th
 			this.label19 = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
 			this.label21 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.label23 = new System.Windows.Forms.Label();
-			this.lbKey2nd = new System.Windows.Forms.Label();
-			this.pnCtrl2nd = new System.Windows.Forms.Panel();
-			this.pnCor2nd = new System.Windows.Forms.Panel();
-			this.pnG2nd = new System.Windows.Forms.Panel();
-			this.pnB2nd = new System.Windows.Forms.Panel();
-			this.pnR2nd = new System.Windows.Forms.Panel();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.lbL3rd = new System.Windows.Forms.Label();
 			this.lbS3rd = new System.Windows.Forms.Label();
 			this.lbH3rd = new System.Windows.Forms.Label();
@@ -152,16 +166,9 @@ namespace pixlocker3th
 			this.label34 = new System.Windows.Forms.Label();
 			this.label35 = new System.Windows.Forms.Label();
 			this.label36 = new System.Windows.Forms.Label();
-			this.label37 = new System.Windows.Forms.Label();
-			this.label38 = new System.Windows.Forms.Label();
-			this.lbKey3rd = new System.Windows.Forms.Label();
-			this.pnCtrl3rd = new System.Windows.Forms.Panel();
-			this.pnCor3rd = new System.Windows.Forms.Panel();
-			this.pnG3rd = new System.Windows.Forms.Panel();
-			this.pnB3rd = new System.Windows.Forms.Panel();
-			this.pn3rd = new System.Windows.Forms.Panel();
-			this.time2GO = new System.Windows.Forms.Timer(this.components);
-			this.bgWorker = new System.ComponentModel.BackgroundWorker();
+			this.groupBox1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnR1st
@@ -197,7 +204,7 @@ namespace pixlocker3th
 			// 
 			// pnCtrl1st
 			// 
-			this.pnCtrl1st.Location = new System.Drawing.Point(41, 58);
+			this.pnCtrl1st.Location = new System.Drawing.Point(35, 58);
 			this.pnCtrl1st.Name = "pnCtrl1st";
 			this.pnCtrl1st.Size = new System.Drawing.Size(32, 44);
 			this.pnCtrl1st.TabIndex = 4;
@@ -214,7 +221,7 @@ namespace pixlocker3th
 			// label2
 			// 
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(79, 58);
+			this.label2.Location = new System.Drawing.Point(73, 58);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(70, 12);
 			this.label2.TabIndex = 6;
@@ -223,232 +230,16 @@ namespace pixlocker3th
 			// label3
 			// 
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(170, 58);
+			this.label3.Location = new System.Drawing.Point(165, 58);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(88, 12);
 			this.label3.TabIndex = 7;
 			this.label3.Text = "HSB";
 			// 
-			// label4
-			// 
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(79, 79);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(41, 12);
-			this.label4.TabIndex = 8;
-			this.label4.Text = "Red";
-			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(79, 91);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(41, 12);
-			this.label5.TabIndex = 9;
-			this.label5.Text = "Green";
-			// 
-			// label6
-			// 
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(79, 103);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(41, 12);
-			this.label6.TabIndex = 10;
-			this.label6.Text = "Blue";
-			// 
-			// lbB1st
-			// 
-			this.lbB1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbB1st.Location = new System.Drawing.Point(117, 103);
-			this.lbB1st.Name = "lbB1st";
-			this.lbB1st.Size = new System.Drawing.Size(41, 12);
-			this.lbB1st.TabIndex = 13;
-			this.lbB1st.Text = "Blue";
-			// 
-			// lbG1st
-			// 
-			this.lbG1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbG1st.Location = new System.Drawing.Point(117, 91);
-			this.lbG1st.Name = "lbG1st";
-			this.lbG1st.Size = new System.Drawing.Size(41, 12);
-			this.lbG1st.TabIndex = 12;
-			this.lbG1st.Text = "Green";
-			// 
-			// lbR1st
-			// 
-			this.lbR1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbR1st.Location = new System.Drawing.Point(117, 79);
-			this.lbR1st.Name = "lbR1st";
-			this.lbR1st.Size = new System.Drawing.Size(41, 12);
-			this.lbR1st.TabIndex = 11;
-			this.lbR1st.Text = "Red";
-			// 
-			// lbL1st
-			// 
-			this.lbL1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbL1st.Location = new System.Drawing.Point(217, 103);
-			this.lbL1st.Name = "lbL1st";
-			this.lbL1st.Size = new System.Drawing.Size(41, 12);
-			this.lbL1st.TabIndex = 19;
-			this.lbL1st.Text = "Blue";
-			// 
-			// lbS1st
-			// 
-			this.lbS1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbS1st.Location = new System.Drawing.Point(217, 91);
-			this.lbS1st.Name = "lbS1st";
-			this.lbS1st.Size = new System.Drawing.Size(41, 12);
-			this.lbS1st.TabIndex = 18;
-			this.lbS1st.Text = "Green";
-			// 
-			// lbH1st
-			// 
-			this.lbH1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbH1st.Location = new System.Drawing.Point(217, 79);
-			this.lbH1st.Name = "lbH1st";
-			this.lbH1st.Size = new System.Drawing.Size(41, 12);
-			this.lbH1st.TabIndex = 17;
-			this.lbH1st.Text = "Red";
-			// 
-			// label13
-			// 
-			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(170, 103);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(41, 12);
-			this.label13.TabIndex = 16;
-			this.label13.Text = "Lum.";
-			// 
-			// label14
-			// 
-			this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label14.Location = new System.Drawing.Point(170, 91);
-			this.label14.Name = "label14";
-			this.label14.Size = new System.Drawing.Size(41, 12);
-			this.label14.TabIndex = 15;
-			this.label14.Text = "Sat.";
-			// 
-			// label15
-			// 
-			this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(170, 79);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(41, 12);
-			this.label15.TabIndex = 14;
-			this.label15.Text = "Hue";
-			// 
-			// lbL2nd
-			// 
-			this.lbL2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbL2nd.Location = new System.Drawing.Point(217, 228);
-			this.lbL2nd.Name = "lbL2nd";
-			this.lbL2nd.Size = new System.Drawing.Size(41, 12);
-			this.lbL2nd.TabIndex = 39;
-			this.lbL2nd.Text = "Blue";
-			// 
-			// lbS2nd
-			// 
-			this.lbS2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbS2nd.Location = new System.Drawing.Point(217, 216);
-			this.lbS2nd.Name = "lbS2nd";
-			this.lbS2nd.Size = new System.Drawing.Size(41, 12);
-			this.lbS2nd.TabIndex = 38;
-			this.lbS2nd.Text = "Green";
-			// 
-			// lbH2nd
-			// 
-			this.lbH2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbH2nd.Location = new System.Drawing.Point(217, 204);
-			this.lbH2nd.Name = "lbH2nd";
-			this.lbH2nd.Size = new System.Drawing.Size(41, 12);
-			this.lbH2nd.TabIndex = 37;
-			this.lbH2nd.Text = "Red";
-			// 
-			// label10
-			// 
-			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(170, 228);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(41, 12);
-			this.label10.TabIndex = 36;
-			this.label10.Text = "Lum.";
-			// 
-			// label11
-			// 
-			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(170, 216);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(41, 12);
-			this.label11.TabIndex = 35;
-			this.label11.Text = "Sat.";
-			// 
-			// label12
-			// 
-			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(170, 204);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(41, 12);
-			this.label12.TabIndex = 34;
-			this.label12.Text = "Hue";
-			// 
-			// lbB2nd
-			// 
-			this.lbB2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbB2nd.Location = new System.Drawing.Point(117, 228);
-			this.lbB2nd.Name = "lbB2nd";
-			this.lbB2nd.Size = new System.Drawing.Size(41, 12);
-			this.lbB2nd.TabIndex = 33;
-			this.lbB2nd.Text = "Blue";
-			// 
-			// lbG2nd
-			// 
-			this.lbG2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbG2nd.Location = new System.Drawing.Point(117, 216);
-			this.lbG2nd.Name = "lbG2nd";
-			this.lbG2nd.Size = new System.Drawing.Size(41, 12);
-			this.lbG2nd.TabIndex = 32;
-			this.lbG2nd.Text = "Green";
-			// 
-			// lbR2nd
-			// 
-			this.lbR2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbR2nd.Location = new System.Drawing.Point(117, 204);
-			this.lbR2nd.Name = "lbR2nd";
-			this.lbR2nd.Size = new System.Drawing.Size(41, 12);
-			this.lbR2nd.TabIndex = 31;
-			this.lbR2nd.Text = "Red";
-			// 
-			// label19
-			// 
-			this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.Location = new System.Drawing.Point(79, 228);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(41, 12);
-			this.label19.TabIndex = 30;
-			this.label19.Text = "Blue";
-			// 
-			// label20
-			// 
-			this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label20.Location = new System.Drawing.Point(79, 216);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(41, 12);
-			this.label20.TabIndex = 29;
-			this.label20.Text = "Green";
-			// 
-			// label21
-			// 
-			this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label21.Location = new System.Drawing.Point(79, 204);
-			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(41, 12);
-			this.label21.TabIndex = 28;
-			this.label21.Text = "Red";
-			// 
 			// label22
 			// 
 			this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label22.Location = new System.Drawing.Point(170, 183);
+			this.label22.Location = new System.Drawing.Point(165, 183);
 			this.label22.Name = "label22";
 			this.label22.Size = new System.Drawing.Size(88, 12);
 			this.label22.TabIndex = 27;
@@ -457,7 +248,7 @@ namespace pixlocker3th
 			// label23
 			// 
 			this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label23.Location = new System.Drawing.Point(79, 183);
+			this.label23.Location = new System.Drawing.Point(73, 183);
 			this.label23.Name = "label23";
 			this.label23.Size = new System.Drawing.Size(70, 12);
 			this.label23.TabIndex = 26;
@@ -474,7 +265,7 @@ namespace pixlocker3th
 			// 
 			// pnCtrl2nd
 			// 
-			this.pnCtrl2nd.Location = new System.Drawing.Point(41, 183);
+			this.pnCtrl2nd.Location = new System.Drawing.Point(35, 183);
 			this.pnCtrl2nd.Name = "pnCtrl2nd";
 			this.pnCtrl2nd.Size = new System.Drawing.Size(32, 44);
 			this.pnCtrl2nd.TabIndex = 24;
@@ -510,118 +301,10 @@ namespace pixlocker3th
 			this.pnR2nd.Size = new System.Drawing.Size(255, 15);
 			this.pnR2nd.TabIndex = 20;
 			// 
-			// lbL3rd
-			// 
-			this.lbL3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbL3rd.Location = new System.Drawing.Point(217, 354);
-			this.lbL3rd.Name = "lbL3rd";
-			this.lbL3rd.Size = new System.Drawing.Size(41, 12);
-			this.lbL3rd.TabIndex = 59;
-			this.lbL3rd.Text = "Blue";
-			// 
-			// lbS3rd
-			// 
-			this.lbS3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbS3rd.Location = new System.Drawing.Point(217, 342);
-			this.lbS3rd.Name = "lbS3rd";
-			this.lbS3rd.Size = new System.Drawing.Size(41, 12);
-			this.lbS3rd.TabIndex = 58;
-			this.lbS3rd.Text = "Green";
-			// 
-			// lbH3rd
-			// 
-			this.lbH3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbH3rd.Location = new System.Drawing.Point(217, 330);
-			this.lbH3rd.Name = "lbH3rd";
-			this.lbH3rd.Size = new System.Drawing.Size(41, 12);
-			this.lbH3rd.TabIndex = 57;
-			this.lbH3rd.Text = "Red";
-			// 
-			// label28
-			// 
-			this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label28.Location = new System.Drawing.Point(170, 354);
-			this.label28.Name = "label28";
-			this.label28.Size = new System.Drawing.Size(41, 12);
-			this.label28.TabIndex = 56;
-			this.label28.Text = "Lum.";
-			// 
-			// label29
-			// 
-			this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label29.Location = new System.Drawing.Point(170, 342);
-			this.label29.Name = "label29";
-			this.label29.Size = new System.Drawing.Size(41, 12);
-			this.label29.TabIndex = 55;
-			this.label29.Text = "Sat.";
-			// 
-			// label30
-			// 
-			this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label30.Location = new System.Drawing.Point(170, 330);
-			this.label30.Name = "label30";
-			this.label30.Size = new System.Drawing.Size(41, 12);
-			this.label30.TabIndex = 54;
-			this.label30.Text = "Hue";
-			// 
-			// lbB3rd
-			// 
-			this.lbB3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbB3rd.Location = new System.Drawing.Point(123, 354);
-			this.lbB3rd.Name = "lbB3rd";
-			this.lbB3rd.Size = new System.Drawing.Size(41, 12);
-			this.lbB3rd.TabIndex = 53;
-			this.lbB3rd.Text = "Blue";
-			// 
-			// lbG3rd
-			// 
-			this.lbG3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbG3rd.Location = new System.Drawing.Point(123, 342);
-			this.lbG3rd.Name = "lbG3rd";
-			this.lbG3rd.Size = new System.Drawing.Size(41, 12);
-			this.lbG3rd.TabIndex = 52;
-			this.lbG3rd.Text = "Green";
-			// 
-			// lbR3rd
-			// 
-			this.lbR3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbR3rd.Location = new System.Drawing.Point(123, 330);
-			this.lbR3rd.Name = "lbR3rd";
-			this.lbR3rd.Size = new System.Drawing.Size(41, 12);
-			this.lbR3rd.TabIndex = 51;
-			this.lbR3rd.Text = "Red";
-			// 
-			// label34
-			// 
-			this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label34.Location = new System.Drawing.Point(85, 354);
-			this.label34.Name = "label34";
-			this.label34.Size = new System.Drawing.Size(41, 12);
-			this.label34.TabIndex = 50;
-			this.label34.Text = "Blue";
-			// 
-			// label35
-			// 
-			this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label35.Location = new System.Drawing.Point(85, 342);
-			this.label35.Name = "label35";
-			this.label35.Size = new System.Drawing.Size(41, 12);
-			this.label35.TabIndex = 49;
-			this.label35.Text = "Green";
-			// 
-			// label36
-			// 
-			this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label36.Location = new System.Drawing.Point(85, 330);
-			this.label36.Name = "label36";
-			this.label36.Size = new System.Drawing.Size(41, 12);
-			this.label36.TabIndex = 48;
-			this.label36.Text = "Red";
-			// 
 			// label37
 			// 
 			this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label37.Location = new System.Drawing.Point(170, 309);
+			this.label37.Location = new System.Drawing.Point(165, 309);
 			this.label37.Name = "label37";
 			this.label37.Size = new System.Drawing.Size(88, 12);
 			this.label37.TabIndex = 47;
@@ -630,7 +313,7 @@ namespace pixlocker3th
 			// label38
 			// 
 			this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label38.Location = new System.Drawing.Point(85, 309);
+			this.label38.Location = new System.Drawing.Point(73, 309);
 			this.label38.Name = "label38";
 			this.label38.Size = new System.Drawing.Size(70, 12);
 			this.label38.TabIndex = 46;
@@ -643,11 +326,11 @@ namespace pixlocker3th
 			this.lbKey3rd.Name = "lbKey3rd";
 			this.lbKey3rd.Size = new System.Drawing.Size(84, 23);
 			this.lbKey3rd.TabIndex = 45;
-			this.lbKey3rd.Text = "F4 to unlock";
+			this.lbKey3rd.Text = "F4 to lock";
 			// 
 			// pnCtrl3rd
 			// 
-			this.pnCtrl3rd.Location = new System.Drawing.Point(41, 309);
+			this.pnCtrl3rd.Location = new System.Drawing.Point(35, 309);
 			this.pnCtrl3rd.Name = "pnCtrl3rd";
 			this.pnCtrl3rd.Size = new System.Drawing.Size(32, 44);
 			this.pnCtrl3rd.TabIndex = 44;
@@ -675,44 +358,435 @@ namespace pixlocker3th
 			this.pnB3rd.Size = new System.Drawing.Size(255, 15);
 			this.pnB3rd.TabIndex = 41;
 			// 
-			// pn3rd
+			// pnR3rd
 			// 
-			this.pn3rd.BackColor = System.Drawing.Color.Red;
-			this.pn3rd.Location = new System.Drawing.Point(3, 254);
-			this.pn3rd.Name = "pn3rd";
-			this.pn3rd.Size = new System.Drawing.Size(255, 15);
-			this.pn3rd.TabIndex = 40;
+			this.pnR3rd.BackColor = System.Drawing.Color.Red;
+			this.pnR3rd.Location = new System.Drawing.Point(3, 254);
+			this.pnR3rd.Name = "pnR3rd";
+			this.pnR3rd.Size = new System.Drawing.Size(255, 15);
+			this.pnR3rd.TabIndex = 40;
 			// 
 			// time2GO
 			// 
 			this.time2GO.Tick += new System.EventHandler(this.Time2GOTick);
 			// 
-			// bgWorker
+			// groupBox1
 			// 
-			this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BgWorkerDoWork);
-			this.bgWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BgWorkerRunWorkerCompleted);
+			this.groupBox1.Controls.Add(this.lbL1st);
+			this.groupBox1.Controls.Add(this.lbS1st);
+			this.groupBox1.Controls.Add(this.lbH1st);
+			this.groupBox1.Controls.Add(this.label13);
+			this.groupBox1.Controls.Add(this.label14);
+			this.groupBox1.Controls.Add(this.label15);
+			this.groupBox1.Controls.Add(this.lbB1st);
+			this.groupBox1.Controls.Add(this.lbG1st);
+			this.groupBox1.Controls.Add(this.lbR1st);
+			this.groupBox1.Controls.Add(this.label6);
+			this.groupBox1.Controls.Add(this.label5);
+			this.groupBox1.Controls.Add(this.label4);
+			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.groupBox1.Location = new System.Drawing.Point(79, 69);
+			this.groupBox1.Name = "groupBox1";
+			this.groupBox1.Size = new System.Drawing.Size(180, 46);
+			this.groupBox1.TabIndex = 60;
+			this.groupBox1.TabStop = false;
+			// 
+			// lbL1st
+			// 
+			this.lbL1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbL1st.Location = new System.Drawing.Point(137, 31);
+			this.lbL1st.Name = "lbL1st";
+			this.lbL1st.Size = new System.Drawing.Size(41, 12);
+			this.lbL1st.TabIndex = 31;
+			this.lbL1st.Text = "Blue";
+			this.lbL1st.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbS1st
+			// 
+			this.lbS1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbS1st.Location = new System.Drawing.Point(137, 19);
+			this.lbS1st.Name = "lbS1st";
+			this.lbS1st.Size = new System.Drawing.Size(41, 12);
+			this.lbS1st.TabIndex = 30;
+			this.lbS1st.Text = "Green";
+			this.lbS1st.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbH1st
+			// 
+			this.lbH1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbH1st.Location = new System.Drawing.Point(137, 7);
+			this.lbH1st.Name = "lbH1st";
+			this.lbH1st.Size = new System.Drawing.Size(41, 12);
+			this.lbH1st.TabIndex = 29;
+			this.lbH1st.Text = "Red";
+			this.lbH1st.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// label13
+			// 
+			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(87, 31);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(41, 12);
+			this.label13.TabIndex = 28;
+			this.label13.Text = "Lum.";
+			// 
+			// label14
+			// 
+			this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.Location = new System.Drawing.Point(87, 19);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(41, 12);
+			this.label14.TabIndex = 27;
+			this.label14.Text = "Sat.";
+			// 
+			// label15
+			// 
+			this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(87, 7);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(41, 12);
+			this.label15.TabIndex = 26;
+			this.label15.Text = "Hue";
+			// 
+			// lbB1st
+			// 
+			this.lbB1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbB1st.Location = new System.Drawing.Point(41, 31);
+			this.lbB1st.Name = "lbB1st";
+			this.lbB1st.Size = new System.Drawing.Size(41, 12);
+			this.lbB1st.TabIndex = 25;
+			this.lbB1st.Text = "Blue";
+			this.lbB1st.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbG1st
+			// 
+			this.lbG1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbG1st.Location = new System.Drawing.Point(41, 19);
+			this.lbG1st.Name = "lbG1st";
+			this.lbG1st.Size = new System.Drawing.Size(41, 12);
+			this.lbG1st.TabIndex = 24;
+			this.lbG1st.Text = "Green";
+			this.lbG1st.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbR1st
+			// 
+			this.lbR1st.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbR1st.Location = new System.Drawing.Point(41, 7);
+			this.lbR1st.Name = "lbR1st";
+			this.lbR1st.Size = new System.Drawing.Size(41, 12);
+			this.lbR1st.TabIndex = 23;
+			this.lbR1st.Text = "Red";
+			this.lbR1st.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.Location = new System.Drawing.Point(3, 31);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(41, 12);
+			this.label6.TabIndex = 22;
+			this.label6.Text = "Blue";
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(3, 19);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(41, 12);
+			this.label5.TabIndex = 21;
+			this.label5.Text = "Green";
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(3, 7);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(41, 12);
+			this.label4.TabIndex = 20;
+			this.label4.Text = "Red";
+			// 
+			// groupBox2
+			// 
+			this.groupBox2.Controls.Add(this.lbL2nd);
+			this.groupBox2.Controls.Add(this.lbS2nd);
+			this.groupBox2.Controls.Add(this.lbH2nd);
+			this.groupBox2.Controls.Add(this.label10);
+			this.groupBox2.Controls.Add(this.label11);
+			this.groupBox2.Controls.Add(this.label12);
+			this.groupBox2.Controls.Add(this.lbB2nd);
+			this.groupBox2.Controls.Add(this.lbG2nd);
+			this.groupBox2.Controls.Add(this.lbR2nd);
+			this.groupBox2.Controls.Add(this.label19);
+			this.groupBox2.Controls.Add(this.label20);
+			this.groupBox2.Controls.Add(this.label21);
+			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.groupBox2.Location = new System.Drawing.Point(79, 194);
+			this.groupBox2.Name = "groupBox2";
+			this.groupBox2.Size = new System.Drawing.Size(179, 46);
+			this.groupBox2.TabIndex = 61;
+			this.groupBox2.TabStop = false;
+			// 
+			// lbL2nd
+			// 
+			this.lbL2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbL2nd.Location = new System.Drawing.Point(136, 31);
+			this.lbL2nd.Name = "lbL2nd";
+			this.lbL2nd.Size = new System.Drawing.Size(41, 12);
+			this.lbL2nd.TabIndex = 51;
+			this.lbL2nd.Text = "Blue";
+			this.lbL2nd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbS2nd
+			// 
+			this.lbS2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbS2nd.Location = new System.Drawing.Point(136, 19);
+			this.lbS2nd.Name = "lbS2nd";
+			this.lbS2nd.Size = new System.Drawing.Size(41, 12);
+			this.lbS2nd.TabIndex = 50;
+			this.lbS2nd.Text = "Green";
+			this.lbS2nd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbH2nd
+			// 
+			this.lbH2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbH2nd.Location = new System.Drawing.Point(136, 7);
+			this.lbH2nd.Name = "lbH2nd";
+			this.lbH2nd.Size = new System.Drawing.Size(41, 12);
+			this.lbH2nd.TabIndex = 49;
+			this.lbH2nd.Text = "Red";
+			this.lbH2nd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// label10
+			// 
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(87, 31);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(41, 12);
+			this.label10.TabIndex = 48;
+			this.label10.Text = "Lum.";
+			// 
+			// label11
+			// 
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.Location = new System.Drawing.Point(87, 19);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(41, 12);
+			this.label11.TabIndex = 47;
+			this.label11.Text = "Sat.";
+			// 
+			// label12
+			// 
+			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(87, 7);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(41, 12);
+			this.label12.TabIndex = 46;
+			this.label12.Text = "Hue";
+			// 
+			// lbB2nd
+			// 
+			this.lbB2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbB2nd.Location = new System.Drawing.Point(41, 31);
+			this.lbB2nd.Name = "lbB2nd";
+			this.lbB2nd.Size = new System.Drawing.Size(41, 12);
+			this.lbB2nd.TabIndex = 45;
+			this.lbB2nd.Text = "Blue";
+			this.lbB2nd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbG2nd
+			// 
+			this.lbG2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbG2nd.Location = new System.Drawing.Point(41, 19);
+			this.lbG2nd.Name = "lbG2nd";
+			this.lbG2nd.Size = new System.Drawing.Size(41, 12);
+			this.lbG2nd.TabIndex = 44;
+			this.lbG2nd.Text = "Green";
+			this.lbG2nd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbR2nd
+			// 
+			this.lbR2nd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbR2nd.Location = new System.Drawing.Point(41, 7);
+			this.lbR2nd.Name = "lbR2nd";
+			this.lbR2nd.Size = new System.Drawing.Size(41, 12);
+			this.lbR2nd.TabIndex = 43;
+			this.lbR2nd.Text = "Red";
+			this.lbR2nd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// label19
+			// 
+			this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label19.Location = new System.Drawing.Point(3, 31);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(41, 12);
+			this.label19.TabIndex = 42;
+			this.label19.Text = "Blue";
+			// 
+			// label20
+			// 
+			this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label20.Location = new System.Drawing.Point(3, 19);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(41, 12);
+			this.label20.TabIndex = 41;
+			this.label20.Text = "Green";
+			// 
+			// label21
+			// 
+			this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.Location = new System.Drawing.Point(3, 7);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(41, 12);
+			this.label21.TabIndex = 40;
+			this.label21.Text = "Red";
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Controls.Add(this.lbL3rd);
+			this.groupBox3.Controls.Add(this.lbS3rd);
+			this.groupBox3.Controls.Add(this.lbH3rd);
+			this.groupBox3.Controls.Add(this.label28);
+			this.groupBox3.Controls.Add(this.label29);
+			this.groupBox3.Controls.Add(this.label30);
+			this.groupBox3.Controls.Add(this.lbB3rd);
+			this.groupBox3.Controls.Add(this.lbG3rd);
+			this.groupBox3.Controls.Add(this.lbR3rd);
+			this.groupBox3.Controls.Add(this.label34);
+			this.groupBox3.Controls.Add(this.label35);
+			this.groupBox3.Controls.Add(this.label36);
+			this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.groupBox3.Location = new System.Drawing.Point(79, 321);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(179, 45);
+			this.groupBox3.TabIndex = 62;
+			this.groupBox3.TabStop = false;
+			// 
+			// lbL3rd
+			// 
+			this.lbL3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbL3rd.Location = new System.Drawing.Point(135, 31);
+			this.lbL3rd.Name = "lbL3rd";
+			this.lbL3rd.Size = new System.Drawing.Size(41, 12);
+			this.lbL3rd.TabIndex = 71;
+			this.lbL3rd.Text = "Blue";
+			this.lbL3rd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbS3rd
+			// 
+			this.lbS3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbS3rd.Location = new System.Drawing.Point(135, 19);
+			this.lbS3rd.Name = "lbS3rd";
+			this.lbS3rd.Size = new System.Drawing.Size(41, 12);
+			this.lbS3rd.TabIndex = 70;
+			this.lbS3rd.Text = "Green";
+			this.lbS3rd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbH3rd
+			// 
+			this.lbH3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbH3rd.Location = new System.Drawing.Point(135, 7);
+			this.lbH3rd.Name = "lbH3rd";
+			this.lbH3rd.Size = new System.Drawing.Size(41, 12);
+			this.lbH3rd.TabIndex = 69;
+			this.lbH3rd.Text = "Red";
+			this.lbH3rd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// label28
+			// 
+			this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label28.Location = new System.Drawing.Point(86, 31);
+			this.label28.Name = "label28";
+			this.label28.Size = new System.Drawing.Size(41, 12);
+			this.label28.TabIndex = 68;
+			this.label28.Text = "Lum.";
+			// 
+			// label29
+			// 
+			this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label29.Location = new System.Drawing.Point(86, 19);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(41, 12);
+			this.label29.TabIndex = 67;
+			this.label29.Text = "Sat.";
+			// 
+			// label30
+			// 
+			this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label30.Location = new System.Drawing.Point(86, 7);
+			this.label30.Name = "label30";
+			this.label30.Size = new System.Drawing.Size(41, 12);
+			this.label30.TabIndex = 66;
+			this.label30.Text = "Hue";
+			// 
+			// lbB3rd
+			// 
+			this.lbB3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbB3rd.Location = new System.Drawing.Point(41, 31);
+			this.lbB3rd.Name = "lbB3rd";
+			this.lbB3rd.Size = new System.Drawing.Size(41, 12);
+			this.lbB3rd.TabIndex = 65;
+			this.lbB3rd.Text = "Blue";
+			this.lbB3rd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbG3rd
+			// 
+			this.lbG3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbG3rd.Location = new System.Drawing.Point(41, 19);
+			this.lbG3rd.Name = "lbG3rd";
+			this.lbG3rd.Size = new System.Drawing.Size(41, 12);
+			this.lbG3rd.TabIndex = 64;
+			this.lbG3rd.Text = "Green";
+			this.lbG3rd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lbR3rd
+			// 
+			this.lbR3rd.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbR3rd.Location = new System.Drawing.Point(41, 7);
+			this.lbR3rd.Name = "lbR3rd";
+			this.lbR3rd.Size = new System.Drawing.Size(41, 12);
+			this.lbR3rd.TabIndex = 63;
+			this.lbR3rd.Text = "Red";
+			this.lbR3rd.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// label34
+			// 
+			this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label34.Location = new System.Drawing.Point(3, 31);
+			this.label34.Name = "label34";
+			this.label34.Size = new System.Drawing.Size(41, 12);
+			this.label34.TabIndex = 62;
+			this.label34.Text = "Blue";
+			// 
+			// label35
+			// 
+			this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label35.Location = new System.Drawing.Point(3, 19);
+			this.label35.Name = "label35";
+			this.label35.Size = new System.Drawing.Size(41, 12);
+			this.label35.TabIndex = 61;
+			this.label35.Text = "Green";
+			// 
+			// label36
+			// 
+			this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label36.Location = new System.Drawing.Point(3, 7);
+			this.label36.Name = "label36";
+			this.label36.Size = new System.Drawing.Size(41, 12);
+			this.label36.TabIndex = 60;
+			this.label36.Text = "Red";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(261, 371);
+			this.Controls.Add(this.groupBox3);
+			this.Controls.Add(this.groupBox2);
+			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.pnR2nd);
 			this.Controls.Add(this.pnB1st);
 			this.Controls.Add(this.pnG1st);
 			this.Controls.Add(this.pnR1st);
-			this.Controls.Add(this.lbL3rd);
-			this.Controls.Add(this.lbS3rd);
-			this.Controls.Add(this.lbH3rd);
-			this.Controls.Add(this.label28);
-			this.Controls.Add(this.label29);
-			this.Controls.Add(this.label30);
-			this.Controls.Add(this.lbB3rd);
-			this.Controls.Add(this.lbG3rd);
-			this.Controls.Add(this.lbR3rd);
-			this.Controls.Add(this.label34);
-			this.Controls.Add(this.label35);
-			this.Controls.Add(this.label36);
 			this.Controls.Add(this.label37);
 			this.Controls.Add(this.label38);
 			this.Controls.Add(this.lbKey3rd);
@@ -720,19 +794,7 @@ namespace pixlocker3th
 			this.Controls.Add(this.pnCor3rd);
 			this.Controls.Add(this.pnG3rd);
 			this.Controls.Add(this.pnB3rd);
-			this.Controls.Add(this.pn3rd);
-			this.Controls.Add(this.lbL2nd);
-			this.Controls.Add(this.lbS2nd);
-			this.Controls.Add(this.lbH2nd);
-			this.Controls.Add(this.label10);
-			this.Controls.Add(this.label11);
-			this.Controls.Add(this.label12);
-			this.Controls.Add(this.lbB2nd);
-			this.Controls.Add(this.lbG2nd);
-			this.Controls.Add(this.lbR2nd);
-			this.Controls.Add(this.label19);
-			this.Controls.Add(this.label20);
-			this.Controls.Add(this.label21);
+			this.Controls.Add(this.pnR3rd);
 			this.Controls.Add(this.label22);
 			this.Controls.Add(this.label23);
 			this.Controls.Add(this.lbKey2nd);
@@ -740,18 +802,6 @@ namespace pixlocker3th
 			this.Controls.Add(this.pnCor2nd);
 			this.Controls.Add(this.pnG2nd);
 			this.Controls.Add(this.pnB2nd);
-			this.Controls.Add(this.lbL1st);
-			this.Controls.Add(this.lbS1st);
-			this.Controls.Add(this.lbH1st);
-			this.Controls.Add(this.label13);
-			this.Controls.Add(this.label14);
-			this.Controls.Add(this.label15);
-			this.Controls.Add(this.lbB1st);
-			this.Controls.Add(this.lbG1st);
-			this.Controls.Add(this.lbR1st);
-			this.Controls.Add(this.label6);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.lbKey1st);
@@ -766,6 +816,9 @@ namespace pixlocker3th
 			this.Text = "PixLocker the 3th";
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainFormKeyDown);
+			this.groupBox1.ResumeLayout(false);
+			this.groupBox2.ResumeLayout(false);
+			this.groupBox3.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
